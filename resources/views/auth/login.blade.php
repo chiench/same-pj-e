@@ -23,7 +23,7 @@
                                         </fieldset>
                                         <fieldset class="wrap-input">
                                             <label for="frm-login-uname">Email Address:</label>
-                                            <input type="email" id="frm-login-uname" name="email" :value="old('emai;')" required autofocus placeholder="Type your email address">
+                                            <input type="email" id="frm-login-uname" name="email" :value="old('email')" required autofocus placeholder="Type your email address">
                                         </fieldset>
                                         <fieldset class="wrap-input">
                                             <label for="frm-login-pass">Password:</label>
