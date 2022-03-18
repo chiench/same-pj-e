@@ -103,7 +103,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/coupons',Coupons::class)->name('admin_coupons');
     Route::get('/coupons/add',CouponsAdd::class)->name('admin_coupons_add');
     Route::get('/coupons/{coupons_id}',CouponsEdit::class)->name('admin_coupons_edit');
-
     Route::get('/orders',Order::class)->name('admin_orders');
 
 

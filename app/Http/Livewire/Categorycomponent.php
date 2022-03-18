@@ -35,11 +35,9 @@ class CategoryComponent extends Component
     public static function store($product_id, $product_name, $product_price)
     {
         Cart::add($product_id, $product_name,1, $product_price)->associate('App\Models\Product');
-
         session()->flash('success','Thêm mới một mục vào rỏ hàng');
         return redirect()->route('cart');
     }
-
 
 
     public function render()

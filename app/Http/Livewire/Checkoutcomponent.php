@@ -97,7 +97,6 @@ class Checkoutcomponent extends Component
                 'paymode' => 'required'
             ]
         );
-
         $order = new Order();
         $order->user_id = Auth::user()->id;
         $order->subtotal = session()->get('checkout')['subtotal'];
@@ -194,6 +193,7 @@ class Checkoutcomponent extends Component
 
     public function render()
     {
+
         $this->verifyforCheckout();
         return view('livewire.checkoutcomponent')->layout('layout.app');
     }
